@@ -11,58 +11,41 @@
     justify-content: space-between;
     display: flex; 
     flex-direction: row;
-    background: #13293d;
+    background: navy;
     color: #fff;
   }
+main{
+  display: flex;
+  flex-direction: column;
+}
+section{
+  display: flex;
+  flex-wrap: wrap;
+}
+.column-left{
+  text-align: right;
+  border-right: 5px solid gold ;
+  /*float:left;*/
+  width:25%;
+  padding: 2%;
+}
+.column-right{
+  /*float:left;*/
+  width: 75%;
+  padding: 2%;
+  align-items: stretch;
+}
 
-  header h4 {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-  }
-  main {
-    display: flex;
-  }
-  
-  aside {
-    flex: 30%;
-    background-color: #b9c6ae;
-    padding: 20px;
-    flex-wrap: wrap;
-  }
-  
-  section {
-    flex: 70%;
-    background-color: #fff;
-    padding: 20px;
-  }
-  
-  footer {
-    padding: 20px;
-    text-align: center;
-    background: #13293d;
-    color: #fff;
-  }
-  .header{
-    text-align: right;
-    margin: 5px;
-  }
-  /* Image Placeholders */
-  .sample-img {
-    background-color: #fff;
-    width: 100%;
-    padding: 20px;
-    height: 200px;
-    border: 1px solid black;
-  }
-  
-  @media screen and (max-width: 992px) {
+.hero {
+  height: 800px;
+  width: 100%;
+  margin-bottom: 25px;
+}
 
-  }
-  
-  @media screen and (max-width: 768px) {
-  }
-  
-  @media screen and (max-width: 576px) {
-  }
-  
+.nav-contact{
+  flex: content;
+  margin: 10%;
+}
+#contact{
+  flex: 10%;
+}
